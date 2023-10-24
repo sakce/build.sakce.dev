@@ -1,17 +1,19 @@
 import * as React from 'react'
-import { container, h1 } from '../styles/theme.module.css'
+import BuildPosts from '../components/posts'
+import Layout from '../components/layout'
 
 const IndexPage = () => {
-
   return (
-    <main className={ container }>
-      <h1 className={ h1 }>
-        Welcome to <span style={{ color: '#6B7FD7' }}>build.sakce.dev</span>! This is a WIP. 🚀
-      </h1>
+    <main>
+      <Layout pageTitle="Build Posts">
+        <h1>Welcome to build.sakce.dev!</h1>
+        <BuildPosts />
+      </Layout>
     </main>
-  );
-};
+  )
+}
 
-export const Head = () => <title>Home</title>;
+// You'll learn about this in the next task, just copy it for now
+export const Head = () => <title>Home</title>
 
-export default IndexPage;
+export default IndexPage
