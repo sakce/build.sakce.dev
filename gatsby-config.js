@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `build-in-public`,
+    title: `sakce's Build In Public`,
     siteUrl: `https://build.sakce.dev`,
   },
   plugins: [],
